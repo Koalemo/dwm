@@ -97,6 +97,15 @@ static const Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
+    { MODKEY|Mod1Mask,              XK_1,      focusbynum,     {.i = 0} }, // Focus window within tag
+ 	{ MODKEY|Mod1Mask,              XK_2,      focusbynum,     {.i = 1} }, // Focus window within tag
+ 	{ MODKEY|Mod1Mask,              XK_3,      focusbynum,     {.i = 2} }, // Focus window within tag
+ 	{ MODKEY|Mod1Mask,              XK_4,      focusbynum,     {.i = 3} }, // Focus window within tag
+ 	{ MODKEY|Mod1Mask,              XK_5,      focusbynum,     {.i = 4} }, // Focus window within tag
+ 	{ MODKEY|Mod1Mask,              XK_6,      focusbynum,     {.i = 5} }, // Focus window within tag
+ 	{ MODKEY|Mod1Mask,              XK_7,      focusbynum,     {.i = 6} }, // Focus window within tag
+ 	{ MODKEY|Mod1Mask,              XK_8,      focusbynum,     {.i = 7} }, // Focus window within tag
+ 	{ MODKEY|Mod1Mask,              XK_9,      focusbynum,     {.i = 8} }, // Focus window within tag
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 };
 
