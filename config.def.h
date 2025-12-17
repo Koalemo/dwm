@@ -13,10 +13,20 @@ static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
 static const char col_purp[]        = "#9932cc";
-static const char *colors[][3]      = {
+
+static char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_purp  },
+   	[SchemeRb0]  = { col_gray4, "#698EB3", "#216f90"},
+   	[SchemeRb1]  = { col_gray4, "#216f90", "#489dc7"},
+   	[SchemeRb2]  = { col_gray4, "#489dc7", "#5ec2eb"},
+   	[SchemeRb3]  = { col_gray4, "#5ec2eb", "#3a89ef"},
+   	[SchemeRb4]  = { col_gray4, "#3a89ef", "#175bb1"},
+   	[SchemeRb5]  = { col_gray4, "#175bb1", "#2d6271"},
+   	[SchemeRb6]  = { col_gray4, "#2d6271", "#bec3f2"},
+   	[SchemeRb7]  = { col_gray4, "#bec3f2", "#c9eafd"},
+   	[SchemeRb8]  = { col_gray4, "#c9eafd", "#7fc3db"},
+   	[SchemeRb9]  = { col_gray4, "#7fc3db", "#698EB3"},
+	[SchemeNorm] = { col_gray3, col_gray1, col_gray2},
 };
 
 /* tagging */
@@ -70,8 +80,8 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_Return, spawn,                 {.v = termcmd } },  // open new terminal window
 	{ MODKEY,                       XK_w,      spawn,                 {.v = browsercmd } },  // open new browser windwow
 	{ MODKEY,                       XK_b,      togglebar,             {0} },
-	{ MODKEY,                       XK_j,      focusstack,            {.i = +1 } },
-	{ MODKEY,                       XK_k,      focusstack,            {.i = -1 } },
+	{ MODKEY,                       XK_h,      focusstack,            {.i = +1 } },
+	{ MODKEY,                       XK_l,      focusstack,            {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,            {.i = +1 } },
 	{ MODKEY,                       XK_d,      incnmaster,            {.i = -1 } },
 	{ MODKEY,                       XK_h,      setmfact,              {.f = -0.05} },
