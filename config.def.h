@@ -1,5 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
+#include <X11/XF86keysym.h>
+
 /* appearance */
 static const unsigned int borderpx  = 5;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
@@ -121,7 +123,11 @@ static const Key keys[] = {
  	{ MODKEY|Mod1Mask,              XK_9,      focusbynum,            {.i = 8} }, // Focus window within tag
 	{ MODKEY|ShiftMask,             XK_q,      quit,                  {0} },
 	{ MODKEY|ShiftMask,             XK_b,      toggleattachbelow,     {0} },
+	// TODO: fix hardcoded paths
+	{ 0,				XF86XK_MonBrightnessUp, spawn,     SHCMD("~/code/scripts/shell/backlight --inc 5") },
+	{ 0,				XF86XK_MonBrightnessDown, spawn,     SHCMD("~/code/scripts/shell/backlight --dec 5") },
 };
+//static const char *inclight[] = {"~/code/scripts/shell/backlight --inc 5"};
 
 /* button definitions */
 /* click can be ClkTagBar, ClkLtSymbol, ClkStatusText, ClkWinTitle, ClkClientWin, or ClkRootWin */
