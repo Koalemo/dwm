@@ -126,6 +126,9 @@ static const Key keys[] = {
 	// TODO: fix hardcoded paths
 	{ 0,				XF86XK_MonBrightnessUp, spawn,     SHCMD("~/code/scripts/shell/backlight --inc 5") },
 	{ 0,				XF86XK_MonBrightnessDown, spawn,     SHCMD("~/code/scripts/shell/backlight --dec 5") },
+	{ 0,				XF86XK_AudioRaiseVolume, spawn,     SHCMD("amixer set Master 5%+") },
+	{ 0,				XF86XK_AudioLowerVolume, spawn,     SHCMD("amixer set Master 5%-") },
+	{ 0,				XF86XK_AudioMute, spawn,     SHCMD("amixer set Master toggle") },
 };
 //static const char *inclight[] = {"~/code/scripts/shell/backlight --inc 5"};
 
