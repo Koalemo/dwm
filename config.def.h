@@ -124,8 +124,8 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_q,      quit,                  {0} },
 	{ MODKEY|ShiftMask,             XK_b,      toggleattachbelow,     {0} },
 	// TODO: fix hardcoded paths
-	{ 0,				XF86XK_MonBrightnessUp, spawn,     SHCMD("~/code/scripts/shell/backlight --inc 5") },
-	{ 0,				XF86XK_MonBrightnessDown, spawn,     SHCMD("~/code/scripts/shell/backlight --dec 5") },
+	{ 0,				XF86XK_MonBrightnessUp, spawn,     SHCMD("~/code/scripts/shell/backlight --inc 1") },
+	{ 0,				XF86XK_MonBrightnessDown, spawn,     SHCMD("~/code/scripts/shell/backlight --dec 1") },
 	{ 0,				XF86XK_AudioRaiseVolume, spawn,     SHCMD("amixer set Master 5%+") },
 	{ 0,				XF86XK_AudioLowerVolume, spawn,     SHCMD("amixer set Master 5%-") },
 	{ 0,				XF86XK_AudioMute, spawn,     SHCMD("amixer set Master toggle") },
