@@ -123,6 +123,7 @@ static const Key keys[] = {
  	{ MODKEY|Mod1Mask,              XK_9,      focusbynum,            {.i = 8} }, // Focus window within tag
 	{ MODKEY|ShiftMask,             XK_q,      quit,                  {0} },
 	{ MODKEY|ShiftMask,             XK_b,      toggleattachbelow,     {0} },
+  { MODKEY,                       XK_s,      togglesticky,          {0} },
 	// TODO: fix hardcoded paths
 	{ 0,				XF86XK_MonBrightnessUp, spawn,     SHCMD("~/code/scripts/shell/backlight --inc 1") },
 	{ 0,				XF86XK_MonBrightnessDown, spawn,     SHCMD("~/code/scripts/shell/backlight --dec 1") },
