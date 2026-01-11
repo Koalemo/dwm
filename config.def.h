@@ -126,7 +126,7 @@ static const Key keys[] = {
   { MODKEY,                       XK_s,      togglesticky,          {0} },
 	// TODO: fix hardcoded paths
 	{ 0,				XF86XK_MonBrightnessUp, spawn,     SHCMD("~/code/scripts/shell/backlight --inc 1") },
-	{ 0,				XF86XK_MonBrightnessDown, spawn,     SHCMD("~/code/scripts/shell/backlight --dec 1") },
+	{ 0,				XF86XK_MonBrightnessDown, spawn,     SHCMD("~/code/scripts/shell/backlight --dec 3") },
 	{ 0,				XF86XK_AudioRaiseVolume, spawn,     SHCMD("~/code/scripts/shell/volume --inc 1 ") },
 	{ 0,				XF86XK_AudioLowerVolume, spawn,     SHCMD("~/code/scripts/shell/volume --dec 1") },
 	{ 0,				XF86XK_AudioMute, spawn,     SHCMD("~/code/scripts/shell/volume --mute") },
