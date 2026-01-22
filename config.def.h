@@ -121,8 +121,8 @@ static const Key keys[] = {
  	{ MODKEY|Mod1Mask,              XK_7,      focusbynum,            {.i = 6} }, // Focus window within tag
  	{ MODKEY|Mod1Mask,              XK_8,      focusbynum,            {.i = 7} }, // Focus window within tag
  	{ MODKEY|Mod1Mask,              XK_9,      focusbynum,            {.i = 8} }, // Focus window within tag
-	{ MODKEY|ShiftMask,             XK_q,      quit,                  {0} },
-	{ MODKEY|ShiftMask|ControlMask, XK_q,      quit,                  {1} },
+	{ MODKEY|ShiftMask,             XK_q,      quit,                  {1} },      // restart 
+	{ MODKEY|ShiftMask|ControlMask, XK_q,      quit,                  {0} },      // quit
 	{ MODKEY|ShiftMask,             XK_b,      toggleattachbelow,     {0} },
   { MODKEY,                       XK_s,      togglesticky,          {0} },
 	// TODO: fix hardcoded paths
