@@ -2539,6 +2539,11 @@ inplacerotate(const Arg *arg)
 	if (arg->i == 1 && selidx >= selmon->nmaster) insertclient(shead, stail, 0);
 	if (arg->i == -1 && selidx < selmon->nmaster)  insertclient(mtail, mhead, 1);
 	if (arg->i == 1 && selidx < selmon->nmaster)  insertclient(mhead, mtail, 0);
+  // without focus, rotate either stack or master
+	if (arg->i == -3) insertclient(mtail, mhead, 1);
+	if (arg->i == 3) insertclient(mhead, mtail, 0);
+	if (arg->i == -4) insertclient(stail, shead, 1);
+	if (arg->i == 4) insertclient(shead, stail, 0);
 
 	// Restore focus position
 	i = 0;

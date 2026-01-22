@@ -89,10 +89,10 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_b,      togglebar,             {0} },
 	{ MODKEY,                       XK_j,      focusstack,            {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,            {.i = -1 } },
-	{ MODKEY|ShiftMask,             XK_j,      inplacerotate,  {.i = +1} },  // in general: Ctrl means: stack, shift means master, nothing means global. duplicating the master and stack switch shortcuts for logic.
-	{ MODKEY|ShiftMask,             XK_k,      inplacerotate,  {.i = -1} },
-	{ MODKEY|ControlMask,           XK_j,      inplacerotate,  {.i = +1} },
-	{ MODKEY|ControlMask,           XK_k,      inplacerotate,  {.i = -1} },
+	{ MODKEY|ShiftMask,             XK_j,      inplacerotate,  {.i = +3} }, // rotate masters
+	{ MODKEY|ShiftMask,             XK_k,      inplacerotate,  {.i = -3} }, // rotate masters
+	{ MODKEY|ControlMask,           XK_j,      inplacerotate,  {.i = +4} }, // rotate stack
+	{ MODKEY|ControlMask,           XK_k,      inplacerotate,  {.i = -4} }, // rotate stack
   { MODKEY,                       XK_period, switchcol,   {0} },
  	{ MODKEY,                       XK_n,      movestack,      {.i = +1 } },
  	{ MODKEY,                       XK_p,      movestack,      {.i = -1 } },
