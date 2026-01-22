@@ -87,8 +87,8 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_Return, spawn,                 {.v = termcmd } },  // open new terminal window
 	{ MODKEY,                       XK_w,      spawn,                 {.v = browsercmd } },  // open new browser windwow
 	{ MODKEY,                       XK_b,      togglebar,             {0} },
-	{ MODKEY|ShiftMask,             XK_h,      focusstack,            {.i = +1 } },
-	{ MODKEY|ShiftMask,             XK_l,      focusstack,            {.i = -1 } },
+	{ MODKEY,                       XK_j,      focusstack,            {.i = +1 } },
+	{ MODKEY,                       XK_k,      focusstack,            {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,            {.i = +1 } },
 	{ MODKEY,                       XK_d,      incnmaster,            {.i = -1 } },
 	{ MODKEY,                       XK_Return, zoom,                  {0} },
