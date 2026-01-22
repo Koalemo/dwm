@@ -70,7 +70,7 @@ static const Layout layouts[] = {
 #define TILEKEYS(MOD,G,M,S) \
 	{ MOD, XK_r, setdirs,  {.v = (int[])  { INC(G * +1),   INC(M * +1),   INC(S * +1) } } }, \
 	{ MOD, XK_h, setfacts, {.v = (float[]){ INC(G * -0.1), INC(M * -0.1), INC(S * -0.1) } } }, \
-	{ MOD, XK_l, setfacts, {.v = (float[]){ INC(G * +0.1), INC(M * +0.1), INC(S * +0.1) } } },
+	{ MOD , XK_l, setfacts, {.v = (float[]){ INC(G * +0.1), INC(M * +0.1), INC(S * +0.1) } } },
 
 /* helper for spawning shell commands in the pre dwm-5.0 fashion */
 #define SHCMD(cmd) { .v = (const char*[]){ "/bin/sh", "-c", cmd, NULL } }
@@ -87,8 +87,8 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_Return, spawn,                 {.v = termcmd } },  // open new terminal window
 	{ MODKEY,                       XK_w,      spawn,                 {.v = browsercmd } },  // open new browser windwow
 	{ MODKEY,                       XK_b,      togglebar,             {0} },
-	{ MODKEY,                       XK_h,      focusstack,            {.i = +1 } },
-	{ MODKEY,                       XK_l,      focusstack,            {.i = -1 } },
+	{ MODKEY|ShiftMask,             XK_h,      focusstack,            {.i = +1 } },
+	{ MODKEY|ShiftMask,             XK_l,      focusstack,            {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,            {.i = +1 } },
 	{ MODKEY,                       XK_d,      incnmaster,            {.i = -1 } },
 	{ MODKEY,                       XK_Return, zoom,                  {0} },
