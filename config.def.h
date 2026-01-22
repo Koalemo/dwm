@@ -93,7 +93,7 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_k,      inplacerotate,  {.i = -3} }, // rotate masters
 	{ MODKEY|ControlMask,           XK_j,      inplacerotate,  {.i = +4} }, // rotate stack
 	{ MODKEY|ControlMask,           XK_k,      inplacerotate,  {.i = -4} }, // rotate stack
-  { MODKEY,                       XK_period, switchcol,   {0} },
+  { MODKEY,                       XK_comma, switchcol,   {0} },
  	{ MODKEY,                       XK_n,      movestack,      {.i = +1 } },
  	{ MODKEY,                       XK_p,      movestack,      {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,            {.i = +1 } },
