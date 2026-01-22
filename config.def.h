@@ -18,16 +18,16 @@ static const char col_purp[]        = "#9932cc";
 
 static char *colors[][3]      = {
 	/*               fg         bg         border   */
-   	[SchemeRb0]  = { col_gray4, "#698EB3", "#216f90"},
-   	[SchemeRb1]  = { col_gray4, "#216f90", "#489dc7"},
-   	[SchemeRb2]  = { col_gray4, "#489dc7", "#5ec2eb"},
-   	[SchemeRb3]  = { col_gray4, "#5ec2eb", "#3a89ef"},
-   	[SchemeRb4]  = { col_gray4, "#3a89ef", "#175bb1"},
-   	[SchemeRb5]  = { col_gray4, "#175bb1", "#2d6271"},
-   	[SchemeRb6]  = { col_gray4, "#2d6271", "#bec3f2"},
-   	[SchemeRb7]  = { col_gray4, "#bec3f2", "#c9eafd"},
-   	[SchemeRb8]  = { col_gray4, "#c9eafd", "#7fc3db"},
-   	[SchemeRb9]  = { col_gray4, "#7fc3db", "#698EB3"},
+   	[SchemeRb0]  = { col_gray4, "#698EB3", col_purp},
+   	[SchemeRb1]  = { col_gray4, "#216f90", col_purp},
+   	[SchemeRb2]  = { col_gray4, "#489dc7", col_purp},
+   	[SchemeRb3]  = { col_gray4, "#5ec2eb", col_purp},
+   	[SchemeRb4]  = { col_gray4, "#3a89ef", col_purp},
+   	[SchemeRb5]  = { col_gray4, "#175bb1", col_purp},
+   	[SchemeRb6]  = { col_gray4, "#2d6271", col_purp},
+   	[SchemeRb7]  = { col_gray4, "#bec3f2", col_purp},
+   	[SchemeRb8]  = { col_gray4, "#c9eafd", col_purp},
+   	[SchemeRb9]  = { col_gray4, "#7fc3db", col_purp},
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2},
 };
 
