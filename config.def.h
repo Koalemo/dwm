@@ -93,7 +93,7 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_k,      inplacerotate,  {.i = -3} }, // rotate masters
 	{ MODKEY|ControlMask,           XK_j,      inplacerotate,  {.i = +4} }, // rotate stack
 	{ MODKEY|ControlMask,           XK_k,      inplacerotate,  {.i = -4} }, // rotate stack
-  { MODKEY,                       XK_comma, switchcol,   {0} },
+  { MODKEY,                       XK_period, switchcol,   {0} },
  	{ MODKEY,                       XK_n,      movestack,      {.i = +1 } },
  	{ MODKEY,                       XK_p,      movestack,      {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,            {.i = +1 } },
@@ -142,11 +142,12 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_b,      toggleattachbelow,     {0} },
   { MODKEY,                       XK_s,      togglesticky,          {0} },
 	// TODO: fix hardcoded paths
-	{ 0,				XF86XK_MonBrightnessUp, spawn,     SHCMD("~/code/scripts/shell/backlight --inc 1") },
-	{ 0,				XF86XK_MonBrightnessDown, spawn,     SHCMD("~/code/scripts/shell/backlight --dec 3") },
-	{ 0,				XF86XK_AudioRaiseVolume, spawn,     SHCMD("~/code/scripts/shell/volume --inc 1 ") },
-	{ 0,				XF86XK_AudioLowerVolume, spawn,     SHCMD("~/code/scripts/shell/volume --dec 1") },
-	{ 0,				XF86XK_AudioMute, spawn,     SHCMD("~/code/scripts/shell/volume --mute") },
+	{ 0,				                    XF86XK_MonBrightnessUp,   spawn,     SHCMD("~/code/scripts/shell/backlight --inc 1") },
+	{ 0,				                    XF86XK_MonBrightnessDown, spawn,     SHCMD("~/code/scripts/shell/backlight --dec 3") },
+	{ 0,				                    XF86XK_AudioRaiseVolume,  spawn,     SHCMD("~/code/scripts/shell/volume --inc 1 ") },
+	{ 0,				                    XF86XK_AudioLowerVolume,  spawn,     SHCMD("~/code/scripts/shell/volume --dec 1") },
+	{ 0,				                    XF86XK_AudioMute,         spawn,     SHCMD("~/code/scripts/shell/volume --mute") },
+	{ MODKEY|ShiftMask,				      XK_space,                 spawn,     SHCMD("~/code/scripts/shortcut-menus/keyboard-layout") },
 };
 //static const char *inclight[] = {"~/code/scripts/shell/backlight --inc 5"};
 
