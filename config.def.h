@@ -142,12 +142,12 @@ static const Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_b,      toggleattachbelow,     {0} },
   { MODKEY,                       XK_s,      togglesticky,          {0} },
 	// TODO: fix hardcoded paths
-	{ 0,				                    XF86XK_MonBrightnessUp,   spawn,     SHCMD("~/code/scripts/shell/backlight --inc 1") },
-	{ 0,				                    XF86XK_MonBrightnessDown, spawn,     SHCMD("~/code/scripts/shell/backlight --dec 3") },
-	{ 0,				                    XF86XK_AudioRaiseVolume,  spawn,     SHCMD("~/code/scripts/shell/volume --inc 1 ") },
-	{ 0,				                    XF86XK_AudioLowerVolume,  spawn,     SHCMD("~/code/scripts/shell/volume --dec 1") },
-	{ 0,				                    XF86XK_AudioMute,         spawn,     SHCMD("~/code/scripts/shell/volume --mute") },
-	{ MODKEY|ShiftMask,				      XK_space,                 spawn,     SHCMD("~/code/scripts/shortcut-menus/keyboard-layout") },
+	{ 0,				                    XF86XK_MonBrightnessUp,   spawn,     SHCMD("~/workspaceconfig/DEPS/scripts/shell/backlight --inc 1") },
+	{ 0,				                    XF86XK_MonBrightnessDown, spawn,     SHCMD("~/workspaceconfig/DEPS/scripts/shell/backlight --dec 3") },
+	{ 0,				                    XF86XK_AudioRaiseVolume,  spawn,     SHCMD("~/workspaceconfig/DEPS/scripts/shell/volume --inc 1 ") },
+	{ 0,				                    XF86XK_AudioLowerVolume,  spawn,     SHCMD("~/workspaceconfig/DEPS/scripts/shell/volume --dec 1") },
+	{ 0,				                    XF86XK_AudioMute,         spawn,     SHCMD("~/workspaceconfig/DEPS/scripts/shell/volume --mute") },
+	{ MODKEY|ShiftMask,				      XK_space,                 spawn,     SHCMD("~/workspaceconfig/DEPS/scripts/shortcut-menus/keyboard-layout") },
 };
 //static const char *inclight[] = {"~/code/scripts/shell/backlight --inc 5"};
 
