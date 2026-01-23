@@ -238,6 +238,7 @@ static void showhide(Client *c);
 static void sighup(int unused);
 static void sigterm(int unused);
 static void spawn(const Arg *arg);
+static void swapdirs(const Arg *arg);
 static void switchcol(const Arg *arg);
 static void tag(const Arg *arg);
 static void tagmon(const Arg *arg);
@@ -1866,6 +1867,26 @@ spawn(const Arg *arg)
 		execvp(((char **)arg->v)[0], (char **)arg->v);
 		die("dwm: execvp '%s' failed:", ((char **)arg->v)[0]);
 	}
+}
+
+void 
+swapdirs(const Arg * arg)
+{
+  int i, n;
+  int newdirs[3];
+	Area *areas = selmon->pertag->areas[selmon->pertag->curtag];
+  newdirs[0] = areas[1].dir;
+  newdirs[1] = areas[0].dir;
+  newdirs[2] = areas[0].dir;
+
+  // TODO: copied from setdirs function. 
+  // Why can i not just call it? (->dwm crash)
+	for(i = 0; i < 3; i++) {
+		n = (int[]){ 4, 2, 2 }[i];
+		areas[i].dir = ISINC(newdirs[i]) ?
+			MOD((int)areas[i].dir + GETINC(newdirs[i]), n) : TRUNC(newdirs[i], 0, n - 1);
+	}
+  arrange(selmon);
 }
 
 void
